@@ -11,12 +11,9 @@ import org.json.simple.parser.*;
 
 public class Gym {
 
-    public void setRooms(JSONObject rooms) {
-        this.rooms = rooms;
-    }
+
 
     private JSONObject rooms;
-
 
 
     public static void main(String[] args) throws Exception {
@@ -28,25 +25,28 @@ public class Gym {
             JSONObject jo = (JSONObject) obj;
             // getting every room
             JSONObject rooms = (JSONObject) jo.get("rooms");
-            Object frontDesk = rooms.get("front desk");
-            System.out.println(frontDesk);
+            Object currentRoom = rooms.get("front desk");
+            System.out.println(currentRoom);
         }
         catch (Exception e) {
             e.printStackTrace();
         }
-
-
     }
 
+
+    //current room
     private void getCurrentRoom(String room){
         rooms.get("room");
 
-
-
-
-
-
     }
+
+
+    //setter
+    public void setRooms(JSONObject rooms) {
+        this.rooms = rooms;
+    }
+
+
 }
 
 
