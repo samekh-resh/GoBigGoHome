@@ -40,7 +40,9 @@ public class NPC {
     private JSONArray returnInventory( JSONObject character){
         JSONArray inventory = (JSONArray)character.get("inventory");
 
-        System.out.println(inventory.get(0));
+        String s = inventory.toString();
+//        there should be a better way to do this. everytime I tried doing a regex it never worked
+        System.out.println("this is the item "+s.replace("]", "").replace("[", ""));
         return inventory;
     }
 

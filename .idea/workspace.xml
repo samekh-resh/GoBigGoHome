@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca3c9dce-83f8-412b-8ae1-32b02ff2338c" name="Changes" comment="" />
+    <list default="true" id="ca3c9dce-83f8-412b-8ae1-32b02ff2338c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Testing/com/games/gobigorgohome/NPCTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goBigGoHome.iml" beforeDir="false" afterPath="$PROJECT_DIR$/goBigGoHome.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/games/gobigorgohome/NPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/games/gobigorgohome/NPC.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit3 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="flattenPackages" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -16,6 +29,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -24,8 +39,14 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/JSON" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="junit.framework.TestCase" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.games.gobigorgohome" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.NPC">
+  <component name="RunManager" selected="JUnit.NPCTest.getInventory_shouldReturnStringLocation_whenCalled">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.games.gobigorgohome.client.Main" />
       <module name="goBigGoHome" />
@@ -52,6 +73,54 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NPCTest.getInventory_shouldReturnStringLocation_whenCalled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="goBigGoHome" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.games.gobigorgohome.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.games.gobigorgohome" />
+      <option name="MAIN_CLASS_NAME" value="com.games.gobigorgohome.NPCTest" />
+      <option name="METHOD_NAME" value="getInventory_shouldReturnStringLocation_whenCalled" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NPCTest.getNPCLocation_shouldReturnStringLocation_whenCalled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="goBigGoHome" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.games.gobigorgohome.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.games.gobigorgohome" />
+      <option name="MAIN_CLASS_NAME" value="com.games.gobigorgohome.NPCTest" />
+      <option name="METHOD_NAME" value="getNPCLocation_shouldReturnStringLocation_whenCalled" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NPCTest.getNPCName_shouldReturnStringOfName_whenCalled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="goBigGoHome" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.games.gobigorgohome.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.games.gobigorgohome" />
+      <option name="MAIN_CLASS_NAME" value="com.games.gobigorgohome.NPCTest" />
+      <option name="METHOD_NAME" value="getNPCName_shouldReturnStringOfName_whenCalled" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="goBigGoHome" />
       <method v="2">
@@ -67,7 +136,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.NPCTest.getInventory_shouldReturnStringLocation_whenCalled" />
+        <item itemvalue="JUnit.NPCTest.getNPCLocation_shouldReturnStringLocation_whenCalled" />
         <item itemvalue="Application.NPC" />
+        <item itemvalue="JUnit.NPCTest.getNPCName_shouldReturnStringOfName_whenCalled" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -82,5 +154,16 @@
       <updated>1655418313889</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
