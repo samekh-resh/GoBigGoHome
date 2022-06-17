@@ -25,6 +25,9 @@ public class Game {
     private Prompter prompter;
     private SplashPage page = new SplashPage();
     private ParseJSON jsonParser = new ParseJSON();
+    private Double playerHeight = player.getHeight();
+    private Double playerWeight= player.getWeight();
+    private int playerAge = player.getAge();
 
     public Game(Prompter prompter) throws IOException, ParseException {
         this.prompter = prompter;
@@ -34,10 +37,10 @@ public class Game {
     //    collects current input from user to update their avatar
     private void getNewPlayerInfo(){
 //        TODO: validate user input
-        String playerName = prompter.prompt("What is your name? ");
-        double playerHeight = Double.parseDouble(prompter.prompt("What is your height? "));
-        double playerWeight = Double.parseDouble(prompter.prompt("What is your weight? "));
-        int playerAge = Integer.parseInt(prompter.prompt("What is your age? "));
+        validName();
+        validDouble("Height", "What is your height? ", "height", "inches");
+        validDouble("Weight","What is your weight? ", "weight", "pounds");
+        validInt("Age", "What is your age? ", "age", "years");
         createPlayer(playerName, playerAge, playerHeight, playerWeight);
     }
 
@@ -243,6 +246,64 @@ public class Game {
             System.exit(0);
         }
     }
+
+    // validates name requesting one and rejecting empty space(s).
+    private void validName(){
+        playerName = prompter.prompt("What is your name? ");
+        if( playerName.isBlank() || playerName.isEmpty() || playerName.length()>16) {
+            try {
+                System.out.println("You need to type your name or it exceeds 16 characters: ");
+                validName();
+            } catch (NullPointerException e) {
+                System.out.println("You need to type your name: ");
+                validName();
+            }
+        }
+        else {
+            System.out.println("Hello " + playerName +" let's get more about you...");
+        }
+    }
+
+
+    // validates height and weight taking integers or doubles only
+    private void validDouble(String measure, String msg, String measureName, String unit) {
+        measure = prompter.prompt(msg);
+
+        if(measure.isBlank() || measure.isEmpty() || measure.length()>=1) {
+            try {
+                Double measureNum = Double.parseDouble(measure);
+                //validDouble(measure, "you need to type your " + measureName + " in " + unit + ": ", measureName, unit);
+            } catch (NumberFormatException e) {
+                validDouble(measure, "You need to type your " + measureName + " using numbers (" + unit + "): ", measureName, unit);
+            } catch (NullPointerException e) {
+                validDouble(measure, "You need to type your " + measureName + " using numbers (" + unit + "): ", measureName, unit);
+            }
+        }
+        else{
+                Double measureNum = Double.parseDouble(measure);
+                System.out.println("ok, almost there " + playerName);
+            }
+        }
+
+
+    // validates age taking only an integer
+    private void validInt(String measure, String msg, String measureName, String unit) {
+        measure = prompter.prompt(msg);
+
+        if(measure.isBlank() || measure.isEmpty() || measure.length()>=1){
+            try {
+                Integer measureNum = Integer.parseInt(measure);
+                //validInt(measure, "you need to type your "+ measureName+" in " + unit + " or you aren't an adult: ", measureName, unit);
+            }
+            catch (NumberFormatException e) {
+                validInt(measure, "You need to type your "+ measureName + " using numbers integers ("+unit+"): ",measureName,unit);
+            }
+        }else {
+            System.out.println("thanks, now... lets start "+ playerName);
+        }
+
+    }
+
 
 
     public JSONObject getCurrentRoom() {
