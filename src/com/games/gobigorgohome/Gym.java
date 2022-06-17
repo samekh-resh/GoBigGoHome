@@ -19,13 +19,11 @@ public class Gym {
     public Gym() throws IOException, ParseException {
         String gymRoomFilePath = "JSON/gym_rooms.json";
         rooms = jsonParser.getJSONObjectFromFile(gymRoomFilePath);
-
     }
 
     public static Gym getInstance() throws IOException, ParseException {
         return new Gym();
     }
-
 
     public JSONObject getRooms(){
         return (JSONObject) this.rooms.get("rooms");

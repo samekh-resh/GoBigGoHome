@@ -9,7 +9,7 @@ import java.io.IOException;
 public class NPC {
     private ParseJSON jsonParser = new ParseJSON();
 
-    private JSONObject theObject = jsonParser.getJSONObjectFromFile("/Users/ressameo/Desktop/GoBigGoHome/resources/NPCwName.json");
+    private JSONObject theObject = jsonParser.getJSONObjectFromFile("JSON/NPCwName.json");
     private JSONObject characters = jsonParser.getJSONObjectFromJSONObject(theObject,"characters");
 
 
