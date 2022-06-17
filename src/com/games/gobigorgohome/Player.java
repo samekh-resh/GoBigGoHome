@@ -84,7 +84,7 @@ public class Player {
         return newRoom;
     }
 
-    public String getItemAndPlaceInInventory(String item) {
+    public String addItemToInventory(String item) {
 
 //        mayybe this contains method could be a method itself.
         if(isItemInInventory(item) == false){

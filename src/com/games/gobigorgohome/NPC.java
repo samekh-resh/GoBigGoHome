@@ -21,11 +21,15 @@ public class NPC {
 
 
     public NPC( String name) throws IOException, ParseException {
+        if(characters.containsKey(name)){
+            this.npcName = returnName((JSONObject) characters.get(name));
+            this.inventory = returnInventory((JSONObject) characters.get(name));
+            this.npcLocation = returnLocation((JSONObject) characters.get(name));
+            this.phrases = returnPhrases((JSONObject) characters.get(name));
+        }else{
+            System.out.println("sorry, npc does not exist");
+        }
 
-        this.npcName = returnName((JSONObject) characters.get(name));
-        this.inventory = returnInventory((JSONObject) characters.get(name));
-        this.npcLocation = returnLocation((JSONObject) characters.get(name));
-        this.phrases = returnPhrases((JSONObject) characters.get(name));
     }
 
     private String returnName(JSONObject character){
@@ -42,7 +46,7 @@ public class NPC {
 
         String s = inventory.toString();
 //        there should be a better way to do this. everytime I tried doing a regex it never worked
-        System.out.println("this is the item "+s.replace("]", "").replace("[", "").replace("\"", ""));
+//        System.out.println("this is the item "+s.replace("]", "").replace("[", "").replace("\"", ""));
 //        System.out.println("this is the item "+s.replace("\\([^\"]\\)", ""));
         return inventory;
     }

@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca3c9dce-83f8-412b-8ae1-32b02ff2338c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Testing/com/games/gobigorgohome/PlayerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Testing/com/games/gobigorgohome/NPCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Testing/com/games/gobigorgohome/NPCTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/games/gobigorgohome/NPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/games/gobigorgohome/NPC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/games/gobigorgohome/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/games/gobigorgohome/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,21 +47,8 @@
       <recent name="com.games.gobigorgohome" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.NPCTest.getPhrases_shouldReturnPhrase_whenCalled">
-    <configuration name="NPC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.games.gobigorgohome.NPC" />
-      <module name="goBigGoHome" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.games.gobigorgohome.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NPCTest.getInventory_shouldReturnInventory_whenCalled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PlayerTest.isWorkoutComplete_shouldReturnTrue_whenAllMusclesAreWorked">
+    <configuration name="PlayerTest.addItemToInventory_shouldReturnInventory_whenCalled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="goBigGoHome" />
       <extension name="coverage">
         <pattern>
@@ -68,14 +57,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.games.gobigorgohome" />
-      <option name="MAIN_CLASS_NAME" value="com.games.gobigorgohome.NPCTest" />
-      <option name="METHOD_NAME" value="getInventory_shouldReturnInventory_whenCalled" />
+      <option name="MAIN_CLASS_NAME" value="com.games.gobigorgohome.PlayerTest" />
+      <option name="METHOD_NAME" value="addItemToInventory_shouldReturnInventory_whenCalled" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NPCTest.getInventory_shouldReturnStringLocation_whenCalled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PlayerTest.isWorkoutComplete_shouldReturnFalse_evenIfOneMuscleIsNotWorked" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="goBigGoHome" />
       <extension name="coverage">
         <pattern>
@@ -84,14 +73,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.games.gobigorgohome" />
-      <option name="MAIN_CLASS_NAME" value="com.games.gobigorgohome.NPCTest" />
-      <option name="METHOD_NAME" value="getInventory_shouldReturnStringLocation_whenCalled" />
+      <option name="MAIN_CLASS_NAME" value="com.games.gobigorgohome.PlayerTest" />
+      <option name="METHOD_NAME" value="isWorkoutComplete_shouldReturnFalse_evenIfOneMuscleIsNotWorked" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NPCTest.getNPCLocation_shouldReturnStringLocation_whenCalled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PlayerTest.isWorkoutComplete_shouldReturnFalse_ifAllMuscleBooleansAreNotTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="goBigGoHome" />
       <extension name="coverage">
         <pattern>
@@ -100,14 +89,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.games.gobigorgohome" />
-      <option name="MAIN_CLASS_NAME" value="com.games.gobigorgohome.NPCTest" />
-      <option name="METHOD_NAME" value="getNPCLocation_shouldReturnStringLocation_whenCalled" />
+      <option name="MAIN_CLASS_NAME" value="com.games.gobigorgohome.PlayerTest" />
+      <option name="METHOD_NAME" value="isWorkoutComplete_shouldReturnFalse_ifAllMuscleBooleansAreNotTrue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NPCTest.getPhrases_shouldReturnPhrase_whenCalled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PlayerTest.isWorkoutComplete_shouldReturnTrue_whenAllMusclesAreWorked" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="goBigGoHome" />
       <extension name="coverage">
         <pattern>
@@ -116,8 +105,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.games.gobigorgohome" />
-      <option name="MAIN_CLASS_NAME" value="com.games.gobigorgohome.NPCTest" />
-      <option name="METHOD_NAME" value="getPhrases_shouldReturnPhrase_whenCalled" />
+      <option name="MAIN_CLASS_NAME" value="com.games.gobigorgohome.PlayerTest" />
+      <option name="METHOD_NAME" value="isWorkoutComplete_shouldReturnTrue_whenAllMusclesAreWorked" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayerTest.removeItemFromInventory_shouldRemoveItemFromInventory_whenCalled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="goBigGoHome" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.games.gobigorgohome.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.games.gobigorgohome" />
+      <option name="MAIN_CLASS_NAME" value="com.games.gobigorgohome.PlayerTest" />
+      <option name="METHOD_NAME" value="removeItemFromInventory_shouldRemoveItemFromInventory_whenCalled" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -138,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.NPCTest.getPhrases_shouldReturnPhrase_whenCalled" />
-        <item itemvalue="JUnit.NPCTest.getInventory_shouldReturnInventory_whenCalled" />
-        <item itemvalue="JUnit.NPCTest.getInventory_shouldReturnStringLocation_whenCalled" />
-        <item itemvalue="JUnit.NPCTest.getNPCLocation_shouldReturnStringLocation_whenCalled" />
-        <item itemvalue="Application.NPC" />
+        <item itemvalue="JUnit.PlayerTest.isWorkoutComplete_shouldReturnTrue_whenAllMusclesAreWorked" />
+        <item itemvalue="JUnit.PlayerTest.isWorkoutComplete_shouldReturnFalse_evenIfOneMuscleIsNotWorked" />
+        <item itemvalue="JUnit.PlayerTest.isWorkoutComplete_shouldReturnFalse_ifAllMuscleBooleansAreNotTrue" />
+        <item itemvalue="JUnit.PlayerTest.removeItemFromInventory_shouldRemoveItemFromInventory_whenCalled" />
+        <item itemvalue="JUnit.PlayerTest.addItemToInventory_shouldReturnInventory_whenCalled" />
       </list>
     </recent_temporary>
   </component>
