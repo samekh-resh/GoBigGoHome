@@ -28,8 +28,13 @@ public class NPCTest {
         assertEquals(manager.getNpcLocation(), "front desk");
     }
     @Test
-    public void getInventory_shouldReturnStringLocation_whenCalled() {
-        assertEquals(manager.getNpcLocation(), "front desk");
+    public void getInventory_shouldReturnInventory_whenCalled() {
+        assertEquals(manager.getInventory().get(0), "wrench");
+    }
+
+    @Test
+    public void getPhrases_shouldReturnPhrase_whenCalled() {
+        assertEquals(manager.getPhrases().get(0), "Hey what's going on dude? You need this key?");
     }
 
 
